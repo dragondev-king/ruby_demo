@@ -1,0 +1,9 @@
+<h1>Hello, Rails!</h1>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="<%= article_path(article) %>">
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>
